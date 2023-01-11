@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Bookshelf Apps</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="top-bar"></nav>
+
+<div class="konten">
+    <div class="col-1">
+        <div class="user-information my-container">
+            <div class="user-img">
+            <img src="assets/man.jpg" alt="avatar">
+            </div>
+            <div>
+                <h1 class="user-name">Romadloni Putra</h1>
+                <p class="user-bio"></p>Runner & Calon Programmer</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-2">
+        <div class="my-container welcome">
+            <h1>Bookshelf Apps</h1>
+            <p>Mengelola buku lebih mudah dengan Bookshelf Apps</p>
+        </div>
+        <div class="my-container icons">
+            <div class="my-icon">
+                <div class="read-icon">
+                    <img src="assets/book-close.svg" alt="">
+                </div>
+                <h5>Selesai Dibaca</h5>
+            </div>
+            <div class="my-icon">
+                <div class="unread-icon">
+                    <img src="assets/book-read.svg" alt="">
+                </div>
+                <h5>Belum Selesai Dibaca</h5>
+            </div>
+            <div class="my-icon">
+                <div class="trash-icon">
+                    <img src="assets/trash.svg" alt="">
+                </div>
+                <h5>Hapus</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="inputRak">
+    <h2 class="inputRak-title">Masukkan Buku ke Rak Buku</h2>
+</div>
+<div class="colom">
+    <section class="input_section">
+        <form id="inputBook">
+            <div class="input">
+                <label for="inputBookTitle">Judul</label>
+                <input id="inputBookTitle" type="text" placeholder="Judul Buku" required>
+            </div>
+            <div class="input">
+                <label for="inputBookAuthor">Penulis</label>
+                <input id="inputBookAuthor" type="text" placeholder="Nama Penulis" required>
+            </div>
+            <div class="input">
+                <label for="inputBookYear">Tahun</label>
+                <input id="inputBookYear" type="number" placeholder="Tahun buku" required>
+            </div>
+            <button id="bookSubmit" type="submit" class="bookSubmit">Masukkan ke Rak Buku</button>
+        </form>
+    </section>
+</div>
+<div class="colom2">
+    <div class="my-colom">
+        <h2 class="title-colom">Rak Buku</h2>
+    </div>
+    <div class="conten-search">
+    <div class="contsearch-1">
+        <h2>Cari Buku</h2>
+        <form id="searchBook" class="searchBook">
+            <label for="searchBookTitle"></label>
+            <input type="text" class="inputSearch" id="searchBookTitle" placeholder="Judul buku yang dicari . . .">
+        </form>
+    </div>
+    <div class="contsearch-2">
+        <ul>
+            <li>
+                <p>Total Buku</p>
+                <h4 id="totalBook">0</h4>
+            </li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="content-book">
+        <div class="unread" id="unread">
+            <h4 class="itemBuku">Belum Selesai Dibaca</h4>
+        </div>
+        <div class="read" id="read">
+            <h4 class="itemBuku">Selesai Dibaca</h4>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/data.js" type="text/javascript"></script>
+<script src="js/script.js" type="text/javascript"></script>
+<script src="js/dom.js" type="text/javascript"></script>
+</body>
+</html>
